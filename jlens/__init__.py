@@ -9,6 +9,8 @@ from jlens.hf import HFLensModel, Layout, from_hf
 from jlens.hooks import ActivationRecorder
 from jlens.lens import JacobianLens
 from jlens.protocol import LensModel
+from jlens.short_hop import ShortHopAtlas, fit_short_hop_atlas
+from jlens.stats import fit_activation_means
 
 __all__ = [
     "ActivationRecorder",
@@ -16,6 +18,9 @@ __all__ = [
     "JacobianLens",
     "Layout",
     "LensModel",
+    "ShortHopAtlas",
+    "fit_short_hop_atlas",
+    "fit_activation_means",
     "configure_logging",
     "fit",
     "from_hf",

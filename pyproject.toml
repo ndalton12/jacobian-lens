@@ -22,6 +22,7 @@ Paper = "https://transformer-circuits.pub/2026/workspace/index.html"
 
 [project.optional-dependencies]
 dev = ["pytest", "ruff", "datasets"]
+experiment = ["datasets", "matplotlib"]
 
 [tool.ruff]
 line-length = 88
@@ -32,7 +33,7 @@ select = ["E", "F", "W", "I", "B", "UP"]
 ignore = ["E501", "E741"]
 
 [tool.setuptools]
-packages = ["jlens"]
+packages = ["jlens", "experiments", "experiments.short_hop", "scripts"]
 
 [tool.setuptools.package-data]
 jlens = ["data/*"]
